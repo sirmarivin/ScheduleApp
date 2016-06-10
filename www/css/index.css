@@ -73,7 +73,8 @@ body {
 }
 #clientListBox a{
 	text-decoration:none;
-	color:maroon;
+	text-emphasis:accent;
+	color:white;
 	cursor:pointer;
 	overflow:hidden;
 	white-space:nowrap;
@@ -91,7 +92,7 @@ body {
 .clientGuy{
 	width:80%;
 	padding:10%;
-	background-color:rgba(255,255,255,.2);
+	background-color:rgba(50,30,25,.4);
 	border-radius:10px;
 	font-size:15px;
 	color:white;
