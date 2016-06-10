@@ -25,14 +25,14 @@
   <plugin name="cordova-plugin-statusbar" source="npm" spec="~2.1.2"/>
   <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
   <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.2.1"/>
-  <icon src="icon.png"/>
+  <icon src="icono.png"/>
   <platform name="android">
-    <icon src="drawable-ldpi-icon.png" density="ldpi"/>
-    <icon src="drawable-mdpi-icon.png" density="mdpi"/>
-    <icon src="drawable-hdpi-icon.png" density="hdpi"/>
-    <icon src="drawable-xhdpi-icon.png" density="xhdpi"/>
-    <icon src="drawable-xxhdpi-icon.png" density="xxhdpi"/>
-    <icon src="drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <icon src="drawable-ldpi-icono.png" density="ldpi"/>
+    <icon src="drawable-mdpi-icono.png" density="mdpi"/>
+    <icon src="drawable-hdpi-icono.png" density="hdpi"/>
+    <icon src="drawable-xhdpi-icono.png" density="xhdpi"/>
+    <icon src="drawable-xxhdpi-icono.png" density="xxhdpi"/>
+    <icon src="drawable-xxxhdpi-icono.png" density="xxxhdpi"/>
     <splash src="drawable-land-ldpi-screen.png" density="land-ldpi"/>
     <splash src="drawable-land-mdpi-screen.png" density="land-mdpi"/>
     <splash src="drawable-land-hdpi-screen.png" density="land-hdpi"/>
