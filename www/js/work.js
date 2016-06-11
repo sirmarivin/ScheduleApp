@@ -32,9 +32,17 @@ function addClient(time,name,make,model,number,address,boughtKey,complete){
 	else{
 		box = '<div class = "uncheck box"></div>'	
 	}
-	var output = '<div id = '+time+' class = "clientGuy"> Time: '+time.substring(0,21)+'<br/>Name: '+name+'<br/>Make/Model: '+make+'<br />'+
-            'Year: '+model+'<br />Phone: <a href="tel:+'+number+'"  onClick="simpleLinkClick("tel:+'+number+'")">'+number+'</a><br />'+
-            'Address: <a onClick="linkClick("My Location to '+address+'") ">'+checkLength(address)+'</a><div class = "theX"></div></div>'
+	var output = '<div id = '+time+' class = "clientGuy">'+
+					 'Time: '+time.substring(0,21)+'<br/>'+
+					 'Name: '+name+'<br/>'+
+					 'Make/Model: '+make+'<br />'+
+					 'Year: '+model+'<br />'+
+					 'Phone: <a href="tel:+'+number+' "onClick="simpleLinkClick('+number+')">'+number+'</a><br />'+
+					 //'Address: <a onClick="linkClick(My Location to '+address+')">'+checkLength(address)+'</a>'+
+					 'Address: <a onClick="linkClick(\''+address+'\')">'+checkLength(address)+'</a>'+
+					 //'Address: <a onClick="window.alert("cat")">'+checkLength(address)+'</a>'+
+					 '<div class = "theX"></div>'+
+				 '</div>'
 	return output + key + box
 }
 
@@ -178,9 +186,9 @@ $('body').on('click', '.box', function () {
 });
 
 function simpleLinkClick(url){
-	window.open(url)
+	window.open("tel:+"+url)
 }
 
-function linkClick(address){
-	window.open("http://maps.google.com/?q="+address,'_blank','location=no','closebuttoncaption=Return')
+function linkClick(what){
+	window.open("http://maps.google.com/?q='my location to "+what,'_blank','location=no','closebuttoncaption=Return')
 }
